@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Base template file" />
+  <meta name="keywords" content="instant web pages" />
+  <meta name="robots" content="index" />
+  <!-- <meta http-equiv="cache-control" content="no-cache" /> -->
+  <meta http-equiv="expires" content="43200" />
+  <link rel="stylesheet" href="css/w3-min.css" />
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Preston Park Dog Walking</title>
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding"
+    style="z-index: 3; width: 300px; font-weight: bold" id="mySidebar">
+    <br />
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-16 w3-xxlarge w3-text-white"><b>Preston Park</b></h3>
+      <h3 class="w3-padding-16 w3-xxlarge w3-text-white"><b>Dog Walking</b></h3>
+
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Home</a>
+      <!-- <a href="#prices" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Prices</a>
+      <a href="#about" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">About</a>
+      <a href="#work" onclick="w3_close()" class="w3-xlarge w3-bar-item w3-button w3-hover-white">Work</a> -->
+
+
+      <hr />
+
+      <a href="mailto:mrcraigwest@hotmail.com" class="w3-large w3-bar-item w3-button w3-hover-white">Email:
+        mrcraigwest@hotmail.com</a>
+    </div>
+  </nav>
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-xlarge w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+    <span style="" font-size:10px">Preston Park Dog Walking</span>
+
+  </header>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo w3-text-green"><b>Preston Park Dog Walking</b></h1>
+      <h3 class="w3-xxxlarge w3-text-green"><b>No Van</b></h3>
+      <h3 class="w3-xxxlarge w3-text-green"><b>DBS Checked</b></h3>
+      <h3 class="w3-xxxlarge w3-text-green"><b>Insured</b></h3>
+    </div>
+    <div class="w3-container" style="margin-top:1%" id="showcase">
+      <h1 class="w3-jumbo w3-text-green"><b>Craig</b></h1>
+      <hr style="width:50px;border:5px solid green" class="w3-round">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolorum aliquid quisquam ipsa fuga facere
+        impedit placeat quibusdam tempora autem distinctio officia commodi, necessitatibus sint nobis dicta eligendi
+        pariatur unde.</p>
+    </div>
+    <div class="w3-container" style="margin-top:30px" id="showcase">
+      <h1 class="w3-jumbo w3-text-green"><b>My Childhood Dogs</b></h1>
+      <h2 class="w3-jumbo w3-text-green"><b>Leo and Babette</b></h2>
+      <hr style="width:50px;border:5px solid green" class="w3-round">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolorum aliquid quisquam ipsa fuga facere
+        impedit placeat quibusdam tempora autem distinctio officia commodi, necessitatibus sint nobis dicta eligendi
+        pariatur unde.</p>
+    </div>
+
+    <!-- Photo grid (modal) -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="./images/leo.jpg" class="w3-circle" style="width:100%" onclick="onClick(this)" alt="Leo">
+      </div>
+      <div class="w3-half">
+        <img src="./images/babette.jpg" class="w3-circle" style="width:100%" onclick="onClick(this)" alt="Babette">
+      </div>
+    </div>
+    <div class="w3-container" style="margin-top:30px" id="showcase">
+      <h1 class="w3-jumbo w3-text-green"><b>Fees and practices</b></h1>
+      <hr style="width:50px;border:5px solid green" class="w3-round">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolorum aliquid quisquam ipsa fuga facere
+        impedit placeat quibusdam tempora autem distinctio officia commodi, necessitatibus sint nobis dicta eligendi
+        pariatur unde.</p>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class=" w3-container w3-padding" style="margin-top: 25px; padding-right: 8px">
+    <p class="w3-center">
+      Email:
+      <a href="mailto:mrcraigwest@hotmail.com">mrcraigwest@hotmail.com</a>
+    </p>
+  </div>
+  <script src="js/back-to-top.js" defer></script>
+  <back-to-top></back-to-top>
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+  <footer>netlify</footer>
+</body>
+
+</html>
